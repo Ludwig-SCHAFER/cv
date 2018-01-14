@@ -58,10 +58,5 @@ function recurDOM(elt, output, n, depth)
 	}
 }
 
-
-
-putMailInDOM();
-updateAge();
-convertLastUpdateTime();/**/
 //cvInConsole();
 //DOManalyzer();
