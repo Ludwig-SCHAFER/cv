@@ -1,0 +1,125 @@
+*{
+	box-sizing:border-box;
+}
+body{
+}
+div{
+	margin:6px;
+	border:6px green inset;
+}
+
+.page_A4{
+	width:210mm;
+	height:297mm;
+	margin:auto;
+	margin-top:20mm;
+	margin-bottom:20mm;
+	box-shadow: 10px 10px 32px -1px rgba(0,0,0,0.76);
+	padding:10mm;
+	box-sizing:border-box;
+	color:#0E0E10;
+	background:#E3D9C6;
+}
+h1, h2, h3{
+	font-family:'Consolas', monospace;
+}
+h1, h2{
+	text-align:center;
+	font-size:260%;
+	font-weight:bold;
+}
+h3{
+	color:#E3D9C6;
+	background:#A72920;
+	background:#A72920;
+}
+h4{
+	color:#E3D9C6;
+	background:#F67828;
+	background:#F67828;
+}
+#knowledge_container{
+	display:flexbox;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-evenly;
+	align-items:flex-start;
+}
+#knowledge .skill_container{
+	/*width:25%;*/
+}
+#knowledge h4{
+}
+#knowledge ul{
+	list-style:none;
+}
+.skill_low:before{
+	content: "▓▓▒░░";
+	color:#7E4B26;
+	background:#E3D9C6;
+}
+.skill_medium:before{
+	content: "▓▓▓▒░";
+	color:#F6B600;
+	background:#E3D9C6;
+}
+.skill_good:before{
+	content: "▓▓▓▓░";
+	color:#61993B;
+	background:#E3D9C6;
+}
+.skill_perfect:before{
+	content: "▓▓▓▓▓";
+	color:#007CB0;
+	background:#E3D9C6;
+}
+
+#fun ul{
+	list-style:none;
+}
+/*
+ **********************************************************************************************************************
+ * Electronic color codes in CSS.
+ * Converted from RAL values from https://en.wikipedia.org/wiki/Electronic_color_code
+ **********************************************************************************************************************
+ */
+.electronic_0{
+	/* 0 - black */
+	background-color:#0E0E10;
+}
+.electronic_1{
+	/* 1 - brown */
+	background-color:#7E4B26;
+}
+.electronic_2{
+	/* 2 - red */
+	background-color:#A72920;
+}
+.electronic_3{
+	/* 3 - orange */
+	background-color:#F67828;
+}
+.electronic_4{
+	/* 4 - yellow */
+	background-color:#F6B600;
+}
+.electronic_5{
+	/* 5 - green */
+	background-color:#61993B;
+}
+.electronic_6{
+	/* 6 - blue */
+	background-color:#007CB0;
+}
+.electronic_7{
+	/* 7 - violet */
+	background-color:#76689A;
+}
+.electronic_8{
+	/* 8 - gray */
+	background-color:#7A888E;
+}
+.electronic_9{
+	/* 9 - white */
+	background-color:#E3D9C6;
+}
