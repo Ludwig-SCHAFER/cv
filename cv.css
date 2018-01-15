@@ -2,7 +2,7 @@
 	box-sizing:border-box;
 }
 body{
-	background:#f2f2f2;
+	background:#FFFFFF;
 }
 
 div{
@@ -19,7 +19,7 @@ div{
 	box-sizing:border-box;
 	color:#0E0E10;
 	background:#f2f2f2;
-	line-height:1.1;
+	line-height:1.2;
 	/*background:#FFFFFF;*/
 }
 p, ul{
@@ -41,12 +41,13 @@ h3{
 	color:#f2f2f2;
 	background:#A72920;
 	background:#A72920;
-	padding:5px 0;
+	margin-top:10px;
+	/*padding:5px 0;*/
 }
 h4{
 	font-size:120%;
 	/*margin: 5px 0;*/
-	padding: 5px 0;
+/*	padding: 5px 0;*/
 	color:#f2f2f2;
 	background:#F67828;
 	background:#F67828;
