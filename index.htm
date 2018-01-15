@@ -11,30 +11,31 @@
 			<nav><!--TODO check if this is needed to navigate --></nav>
 			<section id="status">
 				<div id="status_container">
-					<p>
+					<p class="status_infos" id="status_primary_infos">
 						<span id="status_name">Ludwig SCHÄFER</span>
 						<br />
-						<span id="status_toeic">Toeic 950</span>
-						<br />
-						<span id="status_street">1337 Street</span>
-						<br />
-						<span id="status_town">12345 MilkyWay</span>
-						<br />
-						<span id="status_phone">
+						<span class="emoji">📱</span><span id="status_phone">
 							<span id="phone_value">
 								<span title="plus trente-trois depuis l'étranger">zéro</span> six, soixante-sept, <span title="nonante">quatre-vingt-dix</span>, soixante, trente
 							</span>
 						</span>
 						<br />
-						<span id="status_mail">ludwig [ponctuation] schafer [arobase] yahoo [ponctuation] com</span>
+						<span class="emoji">📧</span><span id="status_mail">ludwig [ponctuation] schafer [arobase] yahoo [ponctuation] com</span>
 						<br />
+						<span class="emoji">🚗</span><span id="status_drivers_license">Permis B</span>
+					</p>
+					<p class="status_infos" id="status_secondary_infos">
 						<span id="status_age">
 							<span id="age_value">&gt;30</span> ans
 						</span>
 						<br />
-						<span id="status_drivers_license">Permis B</span>
+						<span id="status_street"># rue</span>
 						<br />
-						<span id="status_bonus">Réserviste de l'Armée de l'Air</span>
+						<span id="status_town">Code postal - Ville</span>
+						<br />
+						<span class="emoji">🇬🇧</span><span id="status_toeic">Toeic 950</span>
+						<br />
+						<span class="emoji">🛦</span><span id="status_bonus">Réserviste de l'Armée de l'Air</span>
 					</p>
 				</div>
 			</section>
@@ -51,41 +52,59 @@
 			<section id="experience">
 				<h3>Expériences professionnelles</h3>
 				<div id="exp_container">
-					<p id="exp_pro_muses">
-						<span class="exp_date">05/2013 – 01/2014</span>
-						<span class="exp_role">Ingénieur R&amp;D</span>
-						<span class="exp_company">Muses</span> (véhicule électrique) à Conflans (78).
-						Mise au point de fonctions électriques/électroniques pour les véhicules.
-						Maintenance et dépannage de véhicules électriques.
-						Tests et choix de composants électriques.
-					</p>
-					<p id="exp_pro_atlas">
-						<span class="exp_date">06/2011 – 02/2013</span>
-						Développement d'un service web innovant pour les TPE/PME (mis en pause).
-					</p>
-					<p id="exp_pro_asc">
-						<span class="exp_date">11/2008 – 05/2011</span>
-						<span class="exp_role">Ingénieur R&amp;D</span>
-						<span class="exp_company">ASC Instrument</span> à Neuville sur Oise (95).
-						Développement du logiciel pour une gamme complète d'instruments de mesure
-						Optimisation des performances de calcul.
-						Débogage et correction du logiciel en place.
-						Création de cartes électroniques spécifiques.
-					</p>
-					<p id="exp_pro_asc2">
-						<span class="exp_date">01/2008 – 10/2008</span>
-						<span class="exp_role">Apprenti ingénieur</span>
-						<span class="exp_company">ASC Instrument</span> à Neuville sur Oise (95).
-						Développement du logiciel d'un instrument de mesure.
-					</p>
-					<p id="exp_pro_valeo">
-						<span class="exp_date">09/2005 – 12/2007</span>
-						<span class="exp_role">Apprenti ingénieur</span>
-						<span class="exp_company">VALEO Thermique Habitacle</span>à La Verrière (78).
-						Validation fonctionnelle de systèmes de chauffage d’habitacle commandés électroniquement.
-						Développement d’outils pour les protocoles automobiles LIN/CAN, programmation 
-						d’automates.
-					</p>
+					<div class="exp_unit_container">
+						<p class="exp_pro" id="exp_pro_muses">
+							<span class="exp_date">05/2013 – 01/2014</span>
+							<span class="exp_role">Ingénieur R&amp;D</span>
+							<span class="exp_company">Muses</span> (véhicule électrique) à Conflans (78).
+						</p>
+						<ul>
+							<li>Mise au point de fonctions électriques/électroniques pour les véhicules.</li>
+							<li>Maintenance et dépannage de véhicules électriques.</li>
+							<li>Tests et choix de composants électriques.</li>
+						</ul>
+					</div>
+					<div class="exp_unit_container">
+						<p class="exp_pro" id="exp_pro_atlas">
+							<span class="exp_date">06/2011 – 02/2013</span>
+							Développement d'un service web innovant pour les TPE/PME (mis en pause).
+						</p>
+					</div>
+					<div class="exp_unit_container">
+						<p class="exp_pro" id="exp_pro_asc">
+							<span class="exp_date">11/2008 – 05/2011</span>
+							<span class="exp_role">Ingénieur R&amp;D</span>
+							<span class="exp_company">ASC Instrument</span> à Neuville sur Oise (95).
+						</p>
+						<ul>
+							<li>Développement du logiciel pour une gamme complète d'instruments de mesure</li>
+							<li>Optimisation des performances de calcul.</li>
+							<li>Débogage et correction du logiciel en place.</li>
+							<li>Création de cartes électroniques spécifiques.</li>
+						</ul>
+					</div>
+					<div class="exp_unit_container">
+						<p class="exp_pro" id="exp_pro_asc2">
+							<span class="exp_date">01/2008 – 10/2008</span>
+							<span class="exp_role">Apprenti ingénieur</span>
+							<span class="exp_company">ASC Instrument</span> à Neuville sur Oise (95).
+						</p>
+						<ul>
+							<li>Développement du logiciel d'un instrument de mesure.</li>
+						</ul>
+					</div>
+					<div class="exp_unit_container">
+						<p class="exp_pro" id="exp_pro_valeo">
+							<span class="exp_date">09/2005 – 12/2007</span>
+							<span class="exp_role">Apprenti ingénieur</span>
+							<span class="exp_company">VALEO Thermique Habitacle</span> à La Verrière (78).
+						</p>
+						<ul>
+							<li>Validation fonctionnelle de systèmes de chauffage d’habitacle commandés électroniquement.</li>
+							<li>Développement d’outils pour les protocoles automobiles LIN/CAN, programmation 
+						d’automates.</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 <!--FORMATION-->
@@ -115,56 +134,56 @@
 				<h3>Compétences</h3>
 				<div id="knowledge_container">
 					<div class="skill_container">
-						<h4>Développement web</h4>
+						<h4>Webdev</h4>
 						<ul id="knowledge_web">
-							<li class="skill_good">Javascript</li>
+							<li><span  class="skill_bar skill_good"></span>Javascript</li>
 							<!--
 								Je trouve (opinion personnelle) que la norme HTML5 est trop laxiste avec la syntaxe.
 								De même que certains effet en CSS3 devraient être plutôt considérés comme des modifications d'état
 								et être réalisées en JS (transform:rotate,translate,scale,skew, etc.).
 							-->
-							<li class="skill_perfect">HTML5</li>
-							<li class="skill_medium">CSS3</li>
-							<li class="skill_good">PHP</li>
-							<li class="skill_good">SQL</li>
-							<li class="skill_good">Sémantique</li>
+							<li><span  class="skill_bar skill_perfect"></span>HTML5</li>
+							<li><span  class="skill_bar skill_medium"></span>CSS3</li>
+							<li><span  class="skill_bar skill_good"></span>PHP</li>
+							<li><span  class="skill_bar skill_good"></span>SQL</li>
+							<li><span  class="skill_bar skill_good"></span>Sémantique</li>
 						</ul>
 					</div>
 					<div class="skill_container">
-						<h4>Programmation générale</h4>
+						<h4>Logiciel</h4>
 						<ul id="knowledge_software">
-							<li class="skill_good">Algorithmie</li>
-							<li class="skill_good">Java EE</li>
-							<li class="skill_good">C</li>
-							<li class="skill_medium ">Python</li>
-							<li class="skill_good">Assembleur 8051</li>
-							<li class="skill_good">Etudier un langage</li>
+							<li><span  class="skill_bar skill_good"></span>Algorithmie</li>
+							<li><span  class="skill_bar skill_good"></span>Java EE</li>
+							<li><span  class="skill_bar skill_good"></span>C</li>
+							<li><span  class="skill_bar skill_medium"></span>Python</li>
+							<li><span  class="skill_bar skill_good"></span>Assembleur 8051</li>
+							<li><span  class="skill_bar skill_good"></span>Etudier un langage</li>
 						</ul>
 					</div>
 					<div class="skill_container">
-						<h4>Méthodes et technique</h4>
+						<h4>Méthodes</h4>
 						<ul id="knowledge_technics">
-							<li class="skill_good">Scrum</li>
+							<li><span  class="skill_bar skill_good">Scrum</li>
+							<li><span  class="skill_bar skill_good"   ></span>Git</li>
+							<li><span  class="skill_bar skill_medium" ></span>Linux</li>
+							<li><span  class="skill_bar skill_good"   ></span>SGBDR</li>
+							<li ><span class="skill_bar skill_perfect"></span>Angular 1</li>
+							<li><span  class="skill_bar skill_perfect"></span>google-fu</li>
 							<!--
-								Je ne veux pas être celui qui gère les projets. Pour cela je cache cette compétence.
+							<li><span class="skill_bar skill_perfect"></span>LibreOffice</li>
+							<li><span class="skill_bar skill_good">Gestion de projet (Gantt)</li>
 							-->
-							<!--<li class="skill_good">Gestion de projet (Gantt)</li>-->
-							<li class="skill_good">Git</li>
-							<li class="skill_medium">Linux</li>
-							<li class="skill_good">SGBDR</li>
-							<li class="skill_perfect">LibreOffice</li>
-							<li class="skill_perfect">google-fu</li>
 						</ul>
 					</div>
 					<div class="skill_container">
-						<h4>Capacités humaines</h4>
+						<h4>Humain</h4>
 						<ul id="knowledge_human">
-							<li class="skill_perfect">Anglais courant</li>
-							<li class="skill_perfect">Réflexion amont</li>
-							<li class="skill_perfect">Lire une doc/spec</li>
-							<li class="skill_good">Rédiger un cahier des charges</li>
-							<li class="skill_perfect">Dépanner sur site</li>
-							<li class="skill_perfect">Dépanner à distance</li>
+							<li><span class="skill_bar skill_perfect" ></span>Anglais courant</li>
+							<li><span  class="skill_bar skill_perfect"></span>Réflexion amont</li>
+							<li><span  class="skill_bar skill_perfect"></span>Lire une doc/spec</li>
+							<li><span  class="skill_bar skill_good"   ></span>Rédiger un cahier des charges</li>
+							<li><span  class="skill_bar skill_perfect"></span>Dépanner sur site</li>
+							<li><span  class="skill_bar skill_perfect"></span>Dépanner à distance</li>
 						</ul>
 					</div>
 				</div>
@@ -174,9 +193,9 @@
 				<div id="fun_container">
 					<h3>Détente et loisirs</h3>
 					<ul>
-						<li class="">Jeux vidéo en équipe</li>
-						<li class="">Rétro-ingénierie sur les formats et fichiers de sauvegarde de jeux vidéo</li>
-						<li class="">Jeux de logique</li>
+						<li class="">Jeux vidéo en équipe.</li>
+						<li class="">Rétro-ingénierie sur les formats et fichiers de sauvegarde de jeux vidéo.</li>
+						<li class="">Jeux de logique.</li>
 						<!--
 							Si vous vous posez la question sur la compétence ci-dessous, sachez que :
 							 *    OpenDocument > OOXML
@@ -197,6 +216,6 @@
 		<!-- Functions to made CV clearer even though it is clear enough without JS.-->
 		<script type="text/javascript" src="cv_utils.js"></script>
 		<!-- Do not ever leave an engineer with free time. Open console to be impressed.-->
-		<script type="text/javascript" src="cv_1337.js"></script>
+		<!--<script type="text/javascript" src="cv_1337.js"></script>-->
 	</body>
 </html>

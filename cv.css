@@ -2,6 +2,7 @@
 	box-sizing:border-box;
 }
 body{
+	background:#f2f2f2;
 }
 
 div{
@@ -17,35 +18,112 @@ div{
 	padding:10mm;
 	box-sizing:border-box;
 	color:#0E0E10;
-	background:#E3D9C6;
+	background:#f2f2f2;
+	line-height:1.1;
+	/*background:#FFFFFF;*/
 }
-h1, h2, h3{
-	font-family:'Consolas', monospace;
+p, ul{
+	font-family:Trebuchet, Helvetica, Arial, sans-serif;/**/
+}
+h1, h2, h3, h4{
+	font-family:Consolas, " Courier New", monospace;
 }
 h1, h2{
 	text-align:center;
 	font-size:260%;
 	font-weight:bold;
 }
+h1 + h2{
+	margin-bottom:20px;
+}
 h3{
-	color:#E3D9C6;
+	font-size:160%;
+	color:#f2f2f2;
 	background:#A72920;
 	background:#A72920;
+	padding:5px 0;
 }
 h4{
-	color:#E3D9C6;
+	font-size:120%;
+	/*margin: 5px 0;*/
+	padding: 5px 0;
+	color:#f2f2f2;
 	background:#F67828;
 	background:#F67828;
+	text-align:center;
 }
+.emoji{
+	display:none;/*enable/disble the unicode emojis*/
+}
+#status_container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	/*align-items:stretch;*/
+	margin-bottom:20px;
+}
+#status_container #status_primary_infos{
+	text-align:left;
+}
+#status_container #status_secondary_infos{
+	text-align:right;
+}
+#status_container #status_name{
+	font-weight:bold;
+}
+}
+#status_container a{
+	text-decoration:none;
+	color:#0E0E10;
+	border-bottom:1px solid #7A888E;
+}
+#status_container a:link{
+	text-decoration:none;
+	color:#0E0E10;
+	border-bottom:1px solid #7A888E;
+}
+#status_container a:hover{
+	text-decoration:none;
+	color:#0E0E10;
+	border-bottom:2px solid #7A888E;
+}
+#status_container a:active{
+	text-decoration:none;
+	color:#0E0E10;
+}
+#status_container a:visited{
+	text-decoration:none;
+	color:#0E0E10;
+}
+
+#exp_container ul{
+	list-style:none;
+	font-style:italic;
+}
+#exp_container .exp_pro:not(:last-child){
+	/*border-bottom: 2px #888 solid;*/
+}
+.exp_unit_container{
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+
 #knowledge_container{
-	display:flexbox;
+	display:flex;
 	flex-direction:row;
 	flex-wrap:nowrap;
 	justify-content:space-evenly;
 	align-items:flex-start;
 }
+#knowledge .skill_container:not(:last-child){
+	border-right: 1px solid #7A888E;
+}
 #knowledge .skill_container{
-	/*width:25%;*/
+	padding-left:5px;
+	padding-right:5px;
+	width:25%;
 }
 #knowledge h4{
 }
@@ -71,6 +149,9 @@ h4{
 	content: "▓▓▓▓▓";
 	color:#007CB0;
 	background:#E3D9C6;
+}
+.skill_bar{
+	display:none;
 }
 
 #fun ul{
